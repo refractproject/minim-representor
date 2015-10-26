@@ -1,0 +1,30 @@
+{
+  "name": "minim-representor",
+  "version": "0.0.1",
+  "description": "Minim Representor",
+  "main": "./lib/representor.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/refractproject/minim-representor.git"
+  },
+  "scripts": {
+    "coveralls": "npm run cover && coveralls <coverage/lcov.info",
+    "test": "peasant test",
+    "ci": "peasant -s lint test build",
+    "prepublish": "npm run ci",
+    "cover": "peasant cover",
+    "peasant": "peasant",
+    "lint": "peasant lint"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.8.20",
+    "minim": "^0.11.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "coveralls": "^2.11.2",
+    "peasant": "^0.5.0"
+  },
+  "author": "Stephen Mizell",
+  "license": "MIT"
+}
